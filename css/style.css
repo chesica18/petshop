@@ -105,7 +105,7 @@ header nav ul {
   width: 100%;
   transition-timing-function: ease-out;
   background-color: red;
-  font-size: x-large;
+  font-size: large;
 }
 .hero {
   display: flex;
