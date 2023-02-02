@@ -28,6 +28,7 @@
   flex-direction:column;
   justify-content: space-around;
   width: 100%;
+  
 }
 
 .caja-1 {
@@ -77,16 +78,29 @@ h2 {
   text-align: center;
   color: wheat;
   font-family: "Fredoka One", cursive;
+  padding: 8px;
+  border-radius: 25%;
 }
 header nav ul {
   list-style: none;
 }
 
-/*---------main-----------*/
-.hero img {
-  width: 100%;
-  height: 70vh;
+.header nav div ul li a:hover{
+  box-shadow: inset 0 0 10px yellow, 0 0 10px yellow; 
 }
+
+/*---------main-----------*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+section.hero img {
+  width: 100%;
+  height: 70vh; 
+}
+
 .hero a {
   text-decoration: none;
   color: ghostwhite;
@@ -107,15 +121,9 @@ header nav ul {
   background-color: red;
   font-size: large;
 }
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- 
-}
-main {
+/* main {
   background-color: #ffdb59;
-}
+} */
 
 main section div a {
   text-decoration: none;
@@ -129,10 +137,16 @@ main section div a {
   color: red;
   margin: auto;
   margin-top: 50px;
+
+}
+.tittleOfertas i{
+  margin-left: 80px;
+  margin-right: 80px;
+  color: rgb(245, 91, 116);
 }
 
 
-/* SECTION OFERTAS */
+/*------ INDEX------- SECTION OFERTAS------- */
 .ofertas {
   margin-top: 50px;
 
@@ -150,7 +164,16 @@ main section div a {
   font-family: "Cormorant", serif;
   font-weight: bolder;
   text-align: center;
+  transition: 2s;
 }
+
+.primerOferta:hover {
+  box-shadow: -14px -3px 19px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: -14px -3px 19px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -14px -3px 19px -3px rgba(0,0,0,0.75);
+scale: 1.1;
+}
+
 
 .primerOferta img {
   width: 100%;
@@ -169,7 +192,7 @@ main section div a {
   color: black;
   margin-top: 12px;
 }
-
+/* ----------INDEX ------ forma de pago ------- */
 .formaDePago img {
   width: 100px;
   height: 100px;
@@ -183,18 +206,30 @@ main section div a {
   margin: auto;
   margin-top: 100px;
 }
+section.formaDePago h3 i {
+  margin-left: 80px;
+  margin-right: 80px;
+  color: green;
+
+}
 .imgFormapago {
   background-color: rgb(249, 239, 239);
   border: solid;
   display: flex;
   justify-content: space-around;
 }
+/* -------INDEX ------ UBICACION------- */
 .ubicacion h3 {
   background-color: black;
   text-align: center;
   font-size: x-large;
   padding: 10px;
   color: red;
+}
+section.ubicacion h3 i{
+  margin-left: 80px;
+  margin-right: 80px;
+  color: whitesmoke;
 }
 .ubicacion div {
   display: flex;
@@ -209,7 +244,7 @@ section.ubicacion .imgHora {
   border: 5px solid black;
   margin-top: 10px;
 }
-
+/* --------ALIMENTOS--------- */
 .categoriaAlimentos div {
   border: 2px solid black;
   width: 200px;
@@ -218,8 +253,10 @@ section.ubicacion .imgHora {
 }
 
 .categoriaAlimentos {
+  margin-top: 12px;
   display: flex;
   align-content: space-around;
+  
 }
 .categoriaAlimentos div {
   margin: auto;
@@ -243,17 +280,17 @@ section.ubicacion .imgHora {
   margin: 5px;
 }
 .categGato {
-  width: 200px;
+  width: 196px;
   height: 200px;
 }
 
 .categPerro {
-  width: 200px;
+  width: 196px;
   height: 200px;
 }
 
 .categOtras {
-  width: 200px;
+  width: 196px;
   height: 200px;
 }
 /*----------HOJA CONTACTO----------*/
@@ -318,6 +355,11 @@ justify-content: center;
   border-radius: 0.5em;
   padding: 1em;
   border: none;
+  transition: 1.5s;
+}
+
+.form input:hover{
+  box-shadow: inset 0 0 10px yellow, 0 0 10px yellow; 
 }
 
 .form label{
@@ -334,16 +376,26 @@ justify-content: center;
   letter-spacing: 2px;
 }
 
-.enviar:hover {
-  border-top: double;
-  border-right: hidden;
-  border-bottom: dashed;
-  border-color: ;
-
+/* ------higiene y estetica------ */
+.higiene-estetica h2{
+  text-align: center;
+  padding: 12px;
 }
-
-
-
+.cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  border: none;
+  box-shadow: 2px 4px 8px 0 rgba(22, 22, 26, 0.18);
+}
+.iframe-higiene {
+  display: flex;
+  align-items: center;
+  border: 10px solid black;
+  margin: auto;
+  margin-top: 4%;
+}
 /*whatsapp*/
 
 .whatsapp img {
@@ -383,7 +435,7 @@ footer a {
   display: flex;
   justify-content: space-evenly;
 }
-/* ------media query--- */
+/* ------media query INDEX--- */
 @media screen and (max-width:900px) {
   .ubicacion div {
     display: flex;
@@ -419,6 +471,8 @@ footer a {
   }
   .caja-2 ul a{
     font-size: small;
+    display: flex;
+    margin: 4px;
   }
   .header h1 {
     font-size: 24px;
@@ -441,3 +495,56 @@ footer a {
     width: 300px;
   }
 }
+@media screen and (max-width:490px) {
+  section.hero img{
+    height: 60vh;
+  } 
+  section.hero a{
+    font-size: 12px;
+  }
+
+  .tittleOfertas i{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  section.ubicacion h3 i{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  section.formaDePago h3 i {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+/* --------MEDIA QUORY ALIMENTOS-------- */
+@media screen and (max-width:700px) {
+  .categoriaAlimentos{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .categoriaAlimentos div {
+    margin-top: 12px;
+  }
+  .video{
+    width: 95%;
+    margin-bottom: 8px;
+  }
+}
+
+/* --------MEDIA QUORY HIGIENE Y ESTETICA ---- */
+@media screen and (max-width:900px) {
+  .cards-wrapper{
+    display: flex;
+  }
+
+  .card:not(:first-child){
+    display:none;
+  }
+
+  .iframe-higiene{
+    width: 95%;
+  }
+  }
+
