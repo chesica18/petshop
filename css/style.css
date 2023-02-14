@@ -172,6 +172,7 @@ main section div a {
 -webkit-box-shadow: -14px -3px 19px -3px rgba(0,0,0,0.75);
 -moz-box-shadow: -14px -3px 19px -3px rgba(0,0,0,0.75);
 scale: 1.1;
+
 }
 
 
@@ -306,11 +307,11 @@ section.ubicacion .imgHora {
   width: 90%;
   padding: 0.7em;
   border-radius: 1em;
-
   display: grid;
   grid-auto-rows:max-content;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   animation: mostrar 2s ease;
+  
 
 }
 @keyframes mostrar {
@@ -377,6 +378,9 @@ justify-content: center;
 }
 
 /* ------higiene y estetica------ */
+.carousel {
+  z-index: -1;
+}
 .higiene-estetica h2{
   text-align: center;
   padding: 12px;
@@ -388,6 +392,7 @@ justify-content: center;
 .card {
   border: none;
   box-shadow: 2px 4px 8px 0 rgba(22, 22, 26, 0.18);
+  z-index: -1;
 }
 .iframe-higiene {
   display: flex;
