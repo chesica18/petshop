@@ -26,8 +26,7 @@
         max-width: 60%;
         background-color: #f8da6de9;
         border-radius: 1em;
-        display: flex;
-        align-content: center;
+        @include flex (flex, center);
         justify-content: center;
         img{
             width: 80%;

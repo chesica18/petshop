@@ -4,8 +4,7 @@ footer {
         background-color: orangered;
 
     div{
-        display: flex;
-        align-items: center;
+        @include flex (flex, center);
         justify-content: center;
 
         h4{

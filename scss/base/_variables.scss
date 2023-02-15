@@ -1,0 +1,13 @@
+/*-------variables------*/
+
+
+@mixin flex ($flex, $align) {
+    display: $flex;
+    align-items: $align;
+}
+
+@mixin margin ($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+

@@ -27,8 +27,7 @@
 
 section{
     .iframe-higiene{
-        display: flex;
-        align-items: center;
+        @include flex (flex, center);
         border: 10px solid black;
         margin: auto;
         margin-top: 4%;

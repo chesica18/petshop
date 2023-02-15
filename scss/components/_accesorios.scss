@@ -13,13 +13,11 @@ main{
             a{
                 height: 70%;
                 width: 350px;
-                margin-right: auto;
-                margin-left: auto;
                 margin-bottom: 20px;
                 background-color: black;
-                display: flex;
-                align-content: center;
                 border: solid black 5px;
+                @include flex (flex, center);
+                @include margin (auto, auto);
                 
                 }
                 img{
