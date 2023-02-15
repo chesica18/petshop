@@ -1,0 +1,36 @@
+/*------MAIN HIGIENE Y ESTETICA-----*/
+.carousel {
+    z-index: -1;
+}
+
+.higiene-estetica{
+    h2{
+        text-align: center;
+        padding: 12px;
+    }
+    div{
+        div{
+            div{
+                .cards-wrapper{
+                    display: flex;
+                    justify-content: space-around;
+                    .card{
+                        border: none;
+                        box-shadow: 2px 4px 8px 0 rgba(22, 22, 26, 0.18);
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section{
+    .iframe-higiene{
+        display: flex;
+        align-items: center;
+        border: 10px solid black;
+        margin: auto;
+        margin-top: 4%;
+    }
+}

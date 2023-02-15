@@ -1,0 +1,82 @@
+/*-------HOJA DE CONTACTOS------*/
+.formulario{
+    padding: 80px 0;
+    .card-form{
+        background-image: linear-gradient(to right, #f8d5a5 0%, #f69d2174 100%);
+        margin: auto;
+        width: 90%;
+        padding: 0.7em;
+        border-radius: 1em;
+        display: grid;
+        grid-auto-rows:max-content;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        animation: mostrar 2s ease;
+
+        @keyframes mostrar {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+    figure{
+        width: 80%;
+        max-width: 60%;
+        background-color: #f8da6de9;
+        border-radius: 1em;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        img{
+            width: 80%;
+        }
+    }
+
+    .div-form {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;  
+        gap: 1.5em;
+        text-align: center;
+        justify-content: center;
+        h2{
+            font-family: "Fredoka One", cursive;
+            color: sienna;
+            i{
+                font-family: "Fredoka One", cursive;
+                color: sienna;
+            }
+        }
+    }
+
+    .form {
+        display: grid;
+        justify-items: auto;
+        gap: 4px;
+        input{
+            font: inherit;
+            border-radius: 0.5em;
+            padding: 1em;
+            border: none;
+            transition: 1.5s;
+            &:hover {
+                box-shadow: inset 0 0 10px yellow, 0 0 10px yellow; 
+            }
+        }
+        label{
+            font-family: "Fredoka One", cursive;
+            color: sienna;
+        }
+        .enviar{
+            background-color: sienna;
+            color: white;
+            align-items: center;
+            font-family: "Fredoka One", cursive;
+            padding: 4px;
+            transition: 2s;
+            letter-spacing: 2px;
+        }
+    }
+}

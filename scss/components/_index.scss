@@ -1,0 +1,160 @@
+/*-------MAIN INDEX-------*/
+main{
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        img{
+            width: 100%;
+            height: 70vh; 
+        }
+        a{
+            text-decoration: none;
+            color: ghostwhite;
+            font-family: "Cormorant", serif;
+            font-weight: bolder;
+            background-color: orangered;
+            padding: 12px;
+            text-align: center;
+            letter-spacing: 4px;
+            width: 30%;
+            border-radius: 1em;
+            transition: 1.5s;
+            &:hover{
+                width: 100%;
+                transition-timing-function: ease-out;
+                background-color: red;
+                font-size: large;
+            }
+        }
+    }
+    .tittleOfertas{
+        h3{
+            background-color: black;
+        text-align: center;
+        font-size: x-large;
+        padding: 10px;
+        color: red;
+        margin: auto;
+        margin-top: 50px;
+            i{
+                margin-left: 80px;
+                margin-right: 80px;
+                color: rgb(245, 91, 116);
+            }
+        }
+    }
+    .ofertas{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        .primerOferta{
+            border: 1px solid red;
+            background-color: white;
+            width: 220px;
+            height: 350px;
+            font-family: "Cormorant", serif;
+            font-weight: bolder;
+            text-align: center;
+            transition: 2s;
+
+            &:hover {
+                box-shadow: -14px -3px 19px -3px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -14px -3px 19px -3px rgba(0,0,0,0.75);
+                -moz-box-shadow: -14px -3px 19px -3px rgba(0,0,0,0.75);
+                scale: 1.1;
+            }
+            img{
+                width: 100%;
+                height: 70%;
+                margin-bottom: 4px;
+            }
+            p{
+                margin-bottom: 4px;
+            }
+            a{
+                border: 2px solid #ffdb59;
+                background-color: #ffdb59;
+                font-family: "Fredoka One", cursive;
+                margin-top: 12px;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+    .formaDePago{
+        div{
+            h3{
+                background-color: black;
+                text-align: center;
+                font-size: x-large;
+                padding: 10px;
+                color: red;
+                margin: auto;
+                margin-top: 100px;
+                i{
+                    margin-left: 80px;
+                    margin-right: 80px;
+                    color: green;
+                }
+            }
+        }
+        .imgFormapago{
+            background-color: rgb(249, 239, 239);
+            border: solid;
+            display: flex;
+            justify-content: space-around;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    .ubicacion{
+        h3{
+            background-color: black;
+            text-align: center;
+            font-size: x-large;
+            padding: 10px;
+            color: red;
+            i{
+                margin-left: 80px;
+                margin-right: 80px;
+                color: whitesmoke;
+            }
+        }
+        div{
+            display: flex;
+            justify-content: space-around;
+            .iframe{
+                margin-top: 20px;
+            }
+            .imgHora{
+                width: 400px;
+                height: 300px;
+                border: 5px solid black;
+                margin-top: 10px;
+            }
+        }
+    }
+    .whatsapp{
+        img{
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 20px;
+            bottom: 50px;
+            border: 2px solid rgb(228, 228, 240);
+            border-radius: 50%;
+            transition: 1.5s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+}

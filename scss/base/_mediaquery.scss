@@ -1,0 +1,170 @@
+/* ------media query INDEX--- */
+@media screen and (max-width:900px) {
+    main {
+        .ubicacion{
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:700px) {
+    main {
+        .ofertas{
+            display: flex;
+            flex-direction: column;
+                div{
+                margin-bottom: 10px;
+                }
+        }
+    }
+}
+
+@media screen and (max-width:570px) {
+    header {
+            height: auto;
+        div{
+            .titles{
+                h1{
+                    font-size: 24px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    main {
+        .hero {
+            img{
+                height: auto;
+            }
+        }
+        .formaDePago{
+            .imgFormapago{
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+        .tittleOfertas{
+            font-size: medium;
+            margin-top: 4px;
+        }
+        .ubicacion{
+            div{
+                iframe{
+                    width: 300px;
+                    height: 250px;
+                }
+                img{
+                    width: 300px;
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (max-width:490px) {
+    header{
+        .caja-1{
+            
+            img{
+                height: 30%;
+            }
+            .titles{
+                h1{
+                    font-size: 32px;
+                }
+                h2{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    main{
+        .hero{
+            img{
+                height: 60vh;
+            }
+            a{
+                font-size: 12px;
+            }
+        }
+        .tittleOfertas{
+            h3{
+                i{
+                    margin-left: 20px;
+                    margin-right: 20px;
+            }
+            }
+        }
+        .formaDePago{
+            div{
+                h3{
+                    i{
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        .ubicacion{
+            h3{
+                i{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* --------MEDIA QUORY ALIMENTOS-------- */
+@media screen and (max-width:700px) {
+    main {
+        .categoriaAlimentos{
+            display: flex;
+            flex-direction: column;
+            div{
+                margin-top: 12px;
+            }
+        }
+        section{
+            .video{
+                width: 95%;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+  /* --------MEDIA QUORY HIGIENE Y ESTETICA ---- */
+@media screen and (max-width:900px) {
+    main {
+        section{
+            div{
+                div{
+                    div{
+                        .cards-wrapper{
+                            display: flex;
+                            .card:not(:first-child){
+                                display:none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section{
+            .iframe-higiene{
+                width: 95%;
+            }
+        }
+    }
+    }

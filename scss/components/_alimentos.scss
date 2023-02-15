@@ -1,0 +1,42 @@
+/*---------MAIN ALIMENTOS-------*/
+main {
+    .categoriaAlimentos {
+        margin-top: 12px;
+        display: flex;
+        align-content: space-around;
+        div{
+            border: 2px solid black;
+            width: 200px;
+            height: 300px;
+            background-color: black;
+            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
+            a{
+                text-decoration: none;
+                img{
+                    width: 196px;
+                    height: 200px;
+                }
+            }
+            p{
+                font-family: "Cormorant", serif;
+                color: antiquewhite;
+                text-align: center;
+                font-size: x-large;
+                margin: 5px;
+            }
+        }
+        
+    }
+    section {
+        .video{
+                display: flex;
+                border: 10px solid black;
+                margin: auto;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 15px;
+                }
+    }
+}
