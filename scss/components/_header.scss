@@ -54,7 +54,9 @@ header{
     }
     nav {
         div{
-            ul {
+            .navbar-nav {
+                flex-direction: row;
+                justify-content: space-around;
                 li {
                     a{
                     border-radius: 35%;

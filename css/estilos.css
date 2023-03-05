@@ -16,7 +16,8 @@ main .hero {
   flex-direction: column; }
   main .hero img {
     width: 100%;
-    height: 70vh; }
+    height: auto;
+    max-height: 70vh; }
   main .hero a {
     text-decoration: none;
     color: ghostwhite;
@@ -173,10 +174,13 @@ header {
           transform: scale(1.5);
           border-radius: 100%;
           background-color: sienna; }
-  header nav div ul li a {
-    border-radius: 35%; }
-    header nav div ul li a:hover {
-      box-shadow: inset 0 0 10px yellow, 0 0 10px yellow; }
+  header nav div .navbar-nav {
+    flex-direction: row;
+    justify-content: space-around; }
+    header nav div .navbar-nav li a {
+      border-radius: 35%; }
+      header nav div .navbar-nav li a:hover {
+        box-shadow: inset 0 0 10px yellow, 0 0 10px yellow; }
 
 /*-------FOOTER----------*/
 footer {
@@ -265,31 +269,39 @@ footer {
       letter-spacing: 2px; }
 
 /*------MAIN ACCESORIOS -----*/
-main .conteiner .row h2 {
+main .accesorios h2 {
   color: sienna;
   font-family: "Cormorant", serif;
-  font-size: 36px;
+  font-size: 42px;
   text-align: center; }
 
-main .conteiner .row a {
-  height: 70%;
-  width: 350px;
-  margin-bottom: 20px;
-  background-color: black;
-  border: solid black 5px;
+main .accesorios .conteiner {
   display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto; }
-
-main .conteiner .row img {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  transform: perspective 600px rotateY(180deg);
-  transition: 2s; }
-  main .conteiner .row img:hover {
-    transform: rotateY(180deg); }
+  justify-content: space-around; }
+  main .accesorios .conteiner .card-accesorio {
+    width: 30%;
+    position: relative;
+    z-index: -1;
+    margin-top: 24px;
+    margin-bottom: 20px; }
+    main .accesorios .conteiner .card-accesorio img {
+      width: 100%; }
+    main .accesorios .conteiner .card-accesorio .text-card {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 16px;
+      background: rgba(0, 0, 0, 0.7); }
+      main .accesorios .conteiner .card-accesorio .text-card h3 {
+        color: whitesmoke;
+        font-family: "Cormorant", serif;
+        font-size: 20px;
+        text-align: center; }
+      main .accesorios .conteiner .card-accesorio .text-card p {
+        color: whitesmoke;
+        font-family: "Cormorant", serif;
+        font-size: 16px;
+        text-align: center; }
 
 /*---------MAIN ALIMENTOS-------*/
 main .categoriaAlimentos {
@@ -338,7 +350,8 @@ main section .video {
   .higiene-estetica div div div .cards-wrapper .card {
     border: none;
     box-shadow: 2px 4px 8px 0 rgba(22, 22, 26, 0.18);
-    z-index: -1; }
+    z-index: -1;
+    margin-bottom: 20px; }
 
 section .iframe-higiene {
   display: flex;
@@ -369,8 +382,6 @@ section .iframe-higiene {
       font-size: 24px; }
     header div .titles h2 {
       font-size: 20px; }
-  main .hero img {
-    height: auto; }
   main .formaDePago .imgFormapago img {
     width: 50px;
     height: 50px; }
@@ -390,8 +401,6 @@ section .iframe-higiene {
     font-size: 32px; }
   header .caja-1 .titles h2 {
     font-size: 24px; }
-  main .hero img {
-    height: 60vh; }
   main .hero a {
     font-size: 12px; }
   main .tittleOfertas h3 i {
@@ -403,6 +412,17 @@ section .iframe-higiene {
   main .ubicacion h3 i {
     margin-left: 20px;
     margin-right: 20px; } }
+
+/*-----------MEDIA QUORY ACCESORIOS--------*/
+@media screen and (max-width: 700px) {
+  main .accesorios .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vh; }
+    main .accesorios .conteiner .card-accesorio {
+      width: 70%;
+      margin-bottom: 16px; } }
 
 /* --------MEDIA QUORY ALIMENTOS-------- */
 @media screen and (max-width: 700px) {
@@ -416,10 +436,20 @@ section .iframe-higiene {
     margin-bottom: 8px; } }
 
 /* --------MEDIA QUORY HIGIENE Y ESTETICA ---- */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   main section div div div .cards-wrapper {
-    display: flex; }
+    margin: 16px auto; }
     main section div div div .cards-wrapper .card:not(:first-child) {
-      display: none; }
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
   main section .iframe-higiene {
     width: 95%; } }
+
+@media screen and (max-width: 520px) {
+  main section div div div .cards-wrapper {
+    display: flex;
+    align-items: center;
+    width: 60vh; }
+    main section div div div .cards-wrapper .card:not(:first-child) {
+      display: none; } }
