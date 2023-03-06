@@ -1,5 +1,8 @@
 /*-------variables------*/
-
+@mixin font ($size, $text) {
+    font-size: $size;
+    text-align: $text;
+}
 
 @mixin flex ($flex, $align) {
     display: $flex;

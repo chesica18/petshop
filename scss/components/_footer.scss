@@ -9,9 +9,7 @@ footer {
 
         h4{
             font-family: "Cormorant", serif;
-            text-align: center;
-            font-size: 20px;
-
+            @include font (20px, center);
         }
     }
     a {

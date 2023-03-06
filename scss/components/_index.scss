@@ -31,8 +31,7 @@ main{
     .tittleOfertas{
         h3{
             background-color: black;
-        text-align: center;
-        font-size: x-large;
+        @include font (x-large, center);
         padding: 10px;
         color: red;
         margin: auto;
@@ -86,8 +85,7 @@ main{
         div{
             h3{
                 background-color: black;
-                text-align: center;
-                font-size: x-large;
+                @include font (x-large, center);
                 padding: 10px;
                 color: red;
                 margin: auto;
