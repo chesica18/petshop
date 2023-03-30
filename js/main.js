@@ -44,3 +44,24 @@ if (estaRegistrado === "si") {
 } else {
   alert("Dato inválido.");
 }
+
+//-----HOJA DE CONTACTO---------//
+function formulario(nombreApellido, mail, celular, consulta){
+this.nombreApellido = nombreApellido;
+this.mail = mail;
+this.celular = celular;
+this.consulta = consulta;
+
+
+this.pepito = function ( nombreApellido ) {alert ( "gracias por contactarnos" + this.nombreApellido)
+}
+}
+
+
+
+let nombreApellido = prompt("Ingrese Nombre y Apellido:");
+let mail = prompt("Ingrese su dirección de mail:");
+let celular = prompt("Ingrese su número de celular");
+let consulta = prompt("Déjenos aquí su consulta:");
+formulario.pepito(nombreApellido)
+console.table(formulario);
