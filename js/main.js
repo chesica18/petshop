@@ -53,7 +53,7 @@ this.celular = celular;
 this.consulta = consulta;
 
 
-this.pepito = function ( nombreApellido ) {alert ( "gracias por contactarnos" + this.nombreApellido)
+this.avisoMensajeEnviado = function ( nombreApellido ) {alert ( "gracias por contactarnos" + this.nombreApellido)
 }
 }
 
@@ -63,5 +63,52 @@ let nombreApellido = prompt("Ingrese Nombre y Apellido:");
 let mail = prompt("Ingrese su dirección de mail:");
 let celular = prompt("Ingrese su número de celular");
 let consulta = prompt("Déjenos aquí su consulta:");
-formulario.pepito(nombreApellido)
+formulario.avisoMensajeEnviado(nombreApellido)
 console.table(formulario);
+
+
+const persona1 = {
+	nombreUsuario: prompt('¿como te llamas?'),
+	medioDePagoUsuario: prompt('¿como vas a pagar?'),
+	numerosTc: '',
+}
+function payment() {
+	if (persona1.medioDePagoUsuario === 'tarjeta de credito') {
+		payTc()
+	} else if (persona1.medioDePagoUsuario === 'efectivo') {
+		payCash()
+	} else {
+		alert('Medio de pago inválido')
+	}
+}
+
+function payCash() {
+  alert('Puede retirar su pedido en las próximas 24hs')
+}
+
+function payTc() {
+  persona1.numerosTc = prompt('Ingrese los números de la T.C.')
+}
+
+const listaDeProductos = [
+	{
+		imagen: '/images/shampooOsspret.jpg',
+		descripcion: 'SHAMPOO OSSPRET AQUA - CACHORRO',
+		precio: 990,
+	},
+	{
+		imagen: '/images/shampooDermapet.jpg',
+		descripcion: 'SHAMPOO DERMAPET VOLUMINIZANTE x 250 Ml',
+		precio: 1050,
+	},
+]
+listaDeProductos.push ( 
+  {imagen: "/img/enjuaguelacio.jpg",
+  descripcion: "Crema de enjuague",
+  precio: 900
+
+  }
+)
+  
+
+listaDeProductos.some(producto => prorducto.pecio===900)
